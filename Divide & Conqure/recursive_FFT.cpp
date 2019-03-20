@@ -24,7 +24,7 @@ vector<cmp> FFT(vector<cmp> &A)
     }
 
     vector<cmp> A_even(n/2) , A_odd(n/2);
-    for(auto i=0;i<n;i++)
+    for(auto i=0;i<n/2;i++)
     {
         A_even[i] = A[i*2];
         A_odd[i] = A[i*2 + 1];
