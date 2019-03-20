@@ -63,17 +63,17 @@ ll int max_contiguous_val_DP(ll int A[] ,ll int n)
 
 int main()
 {
-    int n;
+    ll int n;
     cout<<"\n Enter the Size of Array : ";
     cin>>n;
 
-    int A[n];
+    ll int A[n];
     cout<<"\n Enter the Elements : ";
     for(auto i=0;i<n;i++)
         cin>>A[i];
 
-    int max_sum = max_val_contiguous(A,n);
-    int max_sum_DP = max_contiguous_val_DP(A,n);
+    ll int max_sum = max_val_contiguous(A,n);
+    ll int max_sum_DP = max_contiguous_val_DP(A,n);
 
     cout<<"\n Max. Contigeous Value using Brute_Force Approch = "<<max_sum<<endl;
     // cout<<"\n Max. Contigeous Value using DP Approch = "<<max_sum_DP<<endl;
