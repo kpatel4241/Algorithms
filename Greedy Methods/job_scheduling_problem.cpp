@@ -16,6 +16,7 @@ bool comparasion(Job A , Job B)
 }
 
 
+// Time Complexity = O(n^2).
 void job_scheduling(Job A[] , int n)
 {
     int result[n];
@@ -41,6 +42,7 @@ void job_scheduling(Job A[] , int n)
     {
         if( slot[i] == true)
             cout<<A[result[i]].job_id<<" ";
+        cout<<endl;
     }
 }
 
@@ -54,13 +56,13 @@ int main()
     struct Job A[n];
     for(int i=0;i<n;i++)
     {
-        cout<<"\n Enter the Job-ID : ";
+        cout<<"\n Enter the Job-ID"<<i+1<<" : ";
         cin>>A[i].job_id;
 
-        cout<<"\n Enter the Deadline : ";
+        cout<<"\n Enter the Deadline"<<i+1<<" : ";
         cin>> A[i].dead_line;
 
-        cout<<"\n Enter the Profit : ";
+        cout<<"\n Enter the Profit"<<i+1<<" : ";
         cin>>A[i].profit;
     }
 
@@ -75,7 +77,7 @@ int main()
 
 int main() 
 { 
-    Job A[] = { {'A', 2, 100}, {'b', 1, 19}, {'c', 2, 27}, {'d', 1, 25}, {'e', 3, 15}}; 
+    Job A[] = { {'A', 2, 100}, {'B', 1, 19}, {'C', 2, 27}, {'D', 1, 25}, {'E', 3, 15}}; 
     int n = sizeof(A)/sizeof(A[0]); 
 
     sort(A , A+n , comparasion);
